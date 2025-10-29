@@ -1,0 +1,84 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyTorch
+*.pth
+*.pt
+*.ckpt
+*.pkl
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environment
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Data and logs
+data/Freehand_US_data_train_2025/
+data/*.zip
+results/*/tensorboard/
+results/*/saved_model/*.pth
+results/*/saved_model/*.pt
+*.log
+tensorboard_logs/
+test_tensorboard_logs/
+test_plots/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Large files
+*.h5
+*.hdf5
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Documentation builds
+docs/_build/
+docs/_static/
+docs/_templates/
+
+# Screenshots and images (except architecture diagrams)
+*.png
+*.jpg
+*.jpeg
+*.gif
+!img/architecture_*.png
+!docs/images/*.png

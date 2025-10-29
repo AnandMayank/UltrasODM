@@ -1,0 +1,20 @@
+# Requirements for UltrasODM
+
+# Core Dependencies
+--extra-index-url https://download.pytorch.org/whl/cu121
+torch==2.1.0+cu121
+torchvision==0.16.0+cu121
+
+# Data Processing
+h5py==3.8.0
+numpy==1.26.2
+
+# Visualization and Logging
+matplotlib==3.8.2
+tensorboard==2.15.1
+
+# Deep Learning Utilities
+einops==0.7.0
+
+# Optional: For 3D operations
+# pytorch3d (install separately: conda install pytorch3d --no-deps -c pytorch3d)

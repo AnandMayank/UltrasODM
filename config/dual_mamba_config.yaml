@@ -1,0 +1,69 @@
+# Dual Mamba Model Configuration
+
+# Model Architecture
+MODEL_NAME: dual_mamba
+ARCHITECTURE: dual_branch_ssm_with_fps_nps
+
+# Input Configuration
+INPUT_CHANNELS: 1
+NUM_FRAMES: 4
+IMG_SIZE: 224
+
+# Model Dimensions
+FEATURE_DIM: 256
+STATE_DIM: 16
+
+# Dual Mamba Configuration
+KERNEL_SIZE: 4
+NUM_FPS_POINTS: 64
+NUM_NPS_POINTS: 128
+USE_FPS_ORDER: true
+USE_NPS_ORDER: true
+
+# Output Configuration
+OUTPUT_DIM: 6  # 6-DOF pose
+NUM_PAIRS: 3
+
+# Training Parameters
+BATCH_SIZE: 4
+LEARNING_RATE: 0.0001
+WEIGHT_DECAY: 0.0001
+NUM_EPOCHS: 150
+OPTIMIZER: adamw
+
+# Loss Configuration
+LOSS_TYPE: combined_ssm
+ALPHA_MSE: 1.0
+ALPHA_STATE: 0.5
+ALPHA_CONSISTENCY: 0.3
+
+# Scheduler
+SCHEDULER_TYPE: reduce_on_plateau
+SCHEDULER_FACTOR: 0.5
+SCHEDULER_PATIENCE: 15
+
+# Data Configuration
+DATA_PATH: ./data/Freehand_US_data_train_2025
+SAMPLE_RANGE: 1
+NUM_SAMPLES: 4
+
+# SSM Configuration
+DISCRETIZATION_METHOD: zero_order_hold
+STATE_INITIALIZATION: diagonal
+
+# Checkpointing
+SAVE_FREQUENCY: 10
+VAL_FREQUENCY: 1
+SAVE_PATH: ./results/dual_mamba_model
+
+# Logging
+USE_TENSORBOARD: true
+INFO_FREQUENCY: 50
+
+# Device
+GPU: 0
+NUM_WORKERS: 2
+PIN_MEMORY: false
+
+# Random Seed
+RANDOM_SEED: 42

@@ -1,0 +1,59 @@
+# Baseline Model Configuration
+
+# Model Architecture
+MODEL_NAME: baseline
+ARCHITECTURE: efficientnet_b1_with_optical_flow
+
+# Input Configuration
+INPUT_CHANNELS: 1
+IN_FRAMES: 4
+IMG_HEIGHT: 480
+IMG_WIDTH: 640
+
+# Output Configuration
+OUTPUT_DIM: 6  # 6-DOF pose (3 rotation + 3 translation)
+NUM_PAIRS: 3   # Number of frame pairs to predict
+
+# Training Parameters
+BATCH_SIZE: 8
+LEARNING_RATE: 0.0001
+WEIGHT_DECAY: 0.0001
+NUM_EPOCHS: 100
+OPTIMIZER: adam
+
+# Loss Configuration
+LOSS_TYPE: multi_component
+ALPHA_MSE: 1.0
+ALPHA_CORR: 0.5
+ALPHA_SPEED: 0.3
+
+# Scheduler
+SCHEDULER_TYPE: reduce_on_plateau
+SCHEDULER_FACTOR: 0.5
+SCHEDULER_PATIENCE: 10
+
+# Data Configuration
+DATA_PATH: ./data/Freehand_US_data_train_2025
+SAMPLE_RANGE: 1
+NUM_SAMPLES: 4
+
+# Augmentation (optional)
+USE_AUGMENTATION: false
+AUGMENTATION_PROB: 0.3
+
+# Checkpointing
+SAVE_FREQUENCY: 10
+VAL_FREQUENCY: 1
+SAVE_PATH: ./results/baseline_model
+
+# Logging
+USE_TENSORBOARD: true
+INFO_FREQUENCY: 50
+
+# Device
+GPU: 0
+NUM_WORKERS: 4
+PIN_MEMORY: true
+
+# Random Seed
+RANDOM_SEED: 42
