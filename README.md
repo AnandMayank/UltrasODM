@@ -1,10 +1,10 @@
-# UltrasODM: Ultrasound Object Detection and Motion Estimation
+# UltrasODM: A Dual-Stream Optical-Flow–Mamba Network for 3D Freehand Ultrasound Reconstruction
 
 **Anonymous Submission for AAAI 2025**
 
 ## Overview
 
-This repository contains the implementation of UltrasODM (Ultrasound Object Detection and Motion Estimation), a deep learning framework for trackerless 3D freehand ultrasound reconstruction. The framework combines video patch embedding, optical flow analysis, and bidirectional Mamba blocks to achieve sub-millimeter accuracy in ultrasound pose estimation.
+This repository contains the implementation of UltrasODM , a deep learning framework for trackerless 3D freehand ultrasound reconstruction. The framework combines video patch embedding, optical flow analysis, and bidirectional Mamba blocks to achieve sub-millimeter accuracy in ultrasound pose estimation.
 
 ## Key Features
 
