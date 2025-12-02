@@ -1,6 +1,6 @@
 # UltrasODM: A Dual-Stream Optical-Flow–Mamba Network for 3D Freehand Ultrasound Reconstruction
 
-**Anonymous Submission for AAAI 2025**
+**Accepted at the Proceedings of 2rd AI for Medicine and Healthcare Bridge Program at AAAI 2026**
 
 ## Overview
 
