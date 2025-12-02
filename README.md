@@ -2,7 +2,7 @@
 
 *Accepted at the **Proceedings of 2rd AI for Medicine and Healthcare Bridge Program at AAAI 2026**🎉*
 >**UltrasODM: A Dual-Stream Optical-Flow–Mamba Network for Trackerless 3D Freehand Ultrasound Reconstruction**\
-> Mayank Anand*, Ujair Alam, Surya Prakash, Priya Shukla, G.C Nandi, Dom\`{e}nec Puig\
+> Mayank Anand*, Ujair Alam, Surya Prakash, Priya Shukla, Gora Chand Nandi, Domenec Puig\
 >*2nd AI Bridge for Medicine & Healthcare, AAAI 2026 (Poster)*
 
 ## Overview
