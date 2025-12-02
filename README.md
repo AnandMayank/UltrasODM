@@ -206,11 +206,13 @@ UltrasODM/
 If you use this code in your research, please cite:
 
 ```bibtex
-@inproceedings{ultrasom2025,
-  title={UltrasODM: Ultrasound Object Detection and Motion Estimation},
-  author={Anonymous},
-  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
-  year={2025}
+@inproceedings{
+anand2025ultrasodm,
+title={Ultras{ODM}: A Dual Stream Optical Flow Mamba Network for 3D Freehand Ultrasound Reconstruction},
+author={Mayank Anand and Gora Chand Nandi and Surya Prakash and Ujair Alam and Priya Shukla and Domenec Puig},
+booktitle={2rd AI for Medicine and Healthcare Bridge Program at AAAI26},
+year={2025},
+url={https://openreview.net/forum?id=dUPjABX5Qe}
 }
 ```
 
